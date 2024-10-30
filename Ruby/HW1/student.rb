@@ -40,7 +40,7 @@ class Student
   end
 
   def unique_student?
-    @@students.none? {|student| student.name == @name && student.surname == @surname && student.date_of_birth == @date_of_birth}
+    @@students.none? { |student| student.name == @name && student.surname == @surname && student.date_of_birth == @date_of_birth }
   end
 
   def validate_date_of_birth(date_of_birth)
